@@ -1,0 +1,39 @@
+<div class="container">
+    <h3>Módulo de actulización</h3>
+    <div class="container">
+         <div class="card">
+            <div class="card-body">
+                <form>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]='nombre' name="nombre">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]='apellido' name="apellido">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="exampleInputPassword1" [(ngModel)]='correo' name="correo">
+                        </div>
+
+                        <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]='contrasenia' name="contrasenia">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Verificar la contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]='verificarContrasenia' name="verificarContrasenia">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary text-end" (click)="verfiricarContrasenia()">Guardar</button>
+                  </form>
+                  
+                  <p>{{nombre}} - {{apellido}} - {{correo}} - {{contrasenia}} - {{verificarContrasenia}} - {{bandera}}</p>
+            </div>
+          </div>
+    </div>
+</div>
